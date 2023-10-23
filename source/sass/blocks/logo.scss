@@ -1,0 +1,26 @@
+.logo__description {
+  display: none;
+
+  @include desktop-width {
+    display: block;
+    width: 126px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+.logo__link {
+  display: block;
+  width: fit-content;
+
+  @include desktop-width {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.logo__image {
+  display: block;
+}

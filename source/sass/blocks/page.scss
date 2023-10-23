@@ -1,0 +1,22 @@
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: $montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  background-color: $white;
+
+  @include tablet-width {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

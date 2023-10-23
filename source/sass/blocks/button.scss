@@ -1,0 +1,61 @@
+.button {
+  padding: 8px 20px;
+  font-family: $montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  &--primary {
+    color: $white;
+    background-color: $primary;
+    transition: 0.1s;
+
+    &:focus {
+      background-color: $primary-lighter;
+    }
+
+    &:active {
+      background-color: $primary-darker;
+    }
+
+    &:disabled {
+      background-color: $grey;
+    }
+  }
+
+  &--secondary {
+    color: $primary;
+    background-color: $white;
+    transition: 0.1s;
+
+    &:focus {
+      color: $white;
+      background-color: $primary-lighter;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $primary-darker;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $light-grey;
+    }
+  }
+}
+
+
+@include hover-device {
+  .button--primary:hover {
+    background-color: $primary-lighter;
+  }
+
+  .button--secondary:hover {
+    color: $white;
+    background-color: $primary-lighter;
+  }
+}
